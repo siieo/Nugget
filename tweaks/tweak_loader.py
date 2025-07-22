@@ -242,15 +242,15 @@ def load_internal():
     additional_tweaks = {
         "SBBuildNumber": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "PBBProtoDiagnosticsEnabled"
+            "NSFullScreenMenuItemEverywhere"
         ),
         "RTL": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "marketingDemoModeEnabled"
+            "SBDisableLiveIcons"
         ),
         "MetalForceHudEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "ConferenceExternalSettings"
+            "useFastBlinkAnimation"
         ),
         "iMessageDiagnosticsEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
