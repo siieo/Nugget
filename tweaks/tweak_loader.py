@@ -227,6 +227,11 @@ def load_springboard():
         "AirplaySupport": BasicPlistTweak(
             FileLocation.springboard,
             "SBExtendedDisplayOverrideSupportForAirPlayAndDontFileRadars"
+        ),
+        "SBMinimumLockscreenIdleTime": BasicPlistTweak(
+            FileLocation.springboard,
+            key="SBMinimumLockscreenIdleTime",
+            value=5
         )
     }
     tweaks.update(additional_tweaks)
@@ -237,27 +242,27 @@ def load_internal():
     additional_tweaks = {
         "SBBuildNumber": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "UIStatusBarShowBuildVersion"
+            "PBBProtoDiagnosticsEnabled"
         ),
         "RTL": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "NSForceRightToLeftWritingDirection"
+            "marketingDemoModeEnabled"
         ),
         "MetalForceHudEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "MetalForceHudEnabled"
+            "ConferenceExternalSettings"
         ),
         "iMessageDiagnosticsEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "iMessageDiagnosticsEnabled"
+            "DADiagnosticsEnabled"
         ),
         "IDSDiagnosticsEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "IDSDiagnosticsEnabled"
+            "ESDiagnosticsEnabled"
         ),
         "VCDiagnosticsEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "VCDiagnosticsEnabled"
+            "AdditionalDiagnosticsEnabled"
         ),
         "AppStoreDebug": BasicPlistTweak(
             FileLocation.appStore,
