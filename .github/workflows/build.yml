@@ -53,7 +53,7 @@ jobs:
 
   build-macos-arm:
     if: ${{ github.event.inputs.build_for_macos_arm == 'true' }}
-    runs-on: macos-latest
+    runs-on: macos-15
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
