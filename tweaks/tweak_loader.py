@@ -214,7 +214,7 @@ def load_springboard():
         ),
         "SBHideACPower": BasicPlistTweak(
             FileLocation.springboard,
-            "SBHideACPower"
+            "RingerSwitchShowsUI"
         ),
         "SBNeverBreadcrumb": BasicPlistTweak(
             FileLocation.springboard,

@@ -38,6 +38,6 @@ class SpringboardPage(Page):
     def on_enableAirPlayChk_clicked(self, checked: bool):
         tweaks["AirplaySupport"].set_enabled(checked)
     def on_hideACPowerChk_clicked(self, checked: bool):
-        tweaks["SBHideACPower"].set_enabled(checked)
+        tweaks["SBHideACPower"].set_enabled(False)
     def on_lockScreenAutoLockSlider_valueChanged(self, value: int):
         tweaks["SBMinimumLockscreenIdleTime"].set_value(value, toggle_enabled=True)
