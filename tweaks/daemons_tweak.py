@@ -39,6 +39,10 @@ class Daemon(Enum):
         "com.apple.hangtracerd",
         "com.apple.spindump",
         "com.apple.rtcreportingd",
+        "com.apple.peakpowermanagerd",
+        "com.apple.proximitycontrold",
+        "com.apple.cfprefsd.xpc.daemon",
+        "com.apple.cfprefsd.xpc.daemon.system",
         "com.apple.syslogd"
     ]
     ATWAKEUP = ["com.apple.atc.atwakeup"]
