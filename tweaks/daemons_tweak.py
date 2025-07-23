@@ -41,12 +41,10 @@ class Daemon(Enum):
         "com.apple.rtcreportingd",
         "com.apple.peakpowermanagerd",
         "com.apple.proximitycontrold",
-        "com.apple.cfprefsd.xpc.daemon",
         "com.apple.NetworkLinkConditioner",
         "com.apple.nanotimekitcompaniond",
         "com.apple.jetsamproperties.D94",
         "com.apple.jetsamproperties",
-        "com.apple.cfprefsd.xpc.daemon.system",
         "com.apple.syslogd"
     ]
     ATWAKEUP = ["com.apple.atc.atwakeup"]
