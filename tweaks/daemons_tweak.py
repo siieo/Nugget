@@ -60,4 +60,3 @@ class Daemon(Enum):
         "com.apple.assistantd",
         "com.apple.voiced"
     ]
-    NanoTimeKit = ["com.apple.nanotimekitcompaniond"]
