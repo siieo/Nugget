@@ -5685,6 +5685,13 @@ QComboBox QAbstractItemView::item:hover {
                   </widget>
                  </item>
                  <item>
+                  <widget class="QCheckBox" name="accessoryDevChk">
+                   <property name="text">
+                    <string>Show Accessory Developer Settings</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="Line" name="line_17">
                    <property name="styleSheet">
                     <string notr="true">QFrame {
@@ -6141,6 +6148,13 @@ To work properly, also disable the daemon using the toggle above.</string>
                   <widget class="QCheckBox" name="voiceControlChk">
                    <property name="text">
                     <string>Disable Voice Control</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="nanoTimeKitChk">
+                   <property name="text">
+                    <string>Disable NanoTimeKit (Apple Watch Face Sync)</string>
                    </property>
                   </widget>
                  </item>

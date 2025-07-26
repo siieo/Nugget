@@ -248,14 +248,9 @@ def load_internal():
             FileLocation.globalPreferences,
             "UIStatusBarShowBuildVersion"
         ),
-        "RTL": AdvancedPlistTweak(
+        "RTL": BasicPlistTweak(
             FileLocation.globalPreferences,
-            {
-                "_UIEnableLegacyRTL":           True,
-                "NSForceLeftToRightWritingDirection":    True,
-                "NSForceLeftToRightLocalizedStrings":    True,
-                "NSLocaleCalendarDirectionIsLeftToRight":    True
-            }
+            "NSForceRightToLeftWritingDirection"
         ),
         "SBIconVisibility": BasicPlistTweak(
             FileLocation.globalPreferences,
@@ -276,6 +271,10 @@ def load_internal():
         "VCDiagnosticsEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
             "VCDiagnosticsEnabled"
+        ),
+        "AccessoryDeveloperEnabled": BasicPlistTweak(
+            FileLocation.globalPreferences,
+            "AccessoryDeveloperEnabled"
         ),
         "AppStoreDebug": BasicPlistTweak(
             FileLocation.appStore,
