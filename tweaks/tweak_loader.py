@@ -248,9 +248,14 @@ def load_internal():
             FileLocation.globalPreferences,
             "UIStatusBarShowBuildVersion"
         ),
-        "RTL": BasicPlistTweak(
+        "RTL": AdvancedPlistTweak(
             FileLocation.globalPreferences,
-            "NSForceRightToLeftWritingDirection"
+            {
+                "_UIEnableLegacyRTL":           True,
+                "NSForceLeftToRightWritingDirection":    True,
+                "NSForceLeftToRightLocalizedStrings":    True,
+                "NSLocaleCalendarDirectionIsLeftToRight":    True
+            }
         ),
         "SBIconVisibility": BasicPlistTweak(
             FileLocation.globalPreferences,
