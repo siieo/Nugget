@@ -214,7 +214,7 @@ def load_springboard():
         ),
         "SBHideACPower": BasicPlistTweak(
             FileLocation.springboard,
-            "SBSuppressAppShortcutTruncation"
+            "SBHideACPower"
         ),
         "SBNeverBreadcrumb": BasicPlistTweak(
             FileLocation.springboard,
@@ -232,6 +232,10 @@ def load_springboard():
             FileLocation.springboard,
             key="SBMinimumLockscreenIdleTime",
             value=5
+        ),
+        "SBAlwaysShowSystemApertureInSnapshots": BasicPlistTweak(
+            FileLocation.springboard,
+            "SBAlwaysShowSystemApertureInSnapshots"
         )
     }
     tweaks.update(additional_tweaks)
@@ -242,27 +246,31 @@ def load_internal():
     additional_tweaks = {
         "SBBuildNumber": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "NSFullScreenMenuItemEverywhere"
+            "UIStatusBarShowBuildVersion"
         ),
         "RTL": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "SBDisableLiveIcons"
+            "NSForceRightToLeftWritingDirection"
+        ),
+        "SBIconVisibility": BasicPlistTweak(
+            FileLocation.globalPreferences,
+            "SBIconVisibility"
         ),
         "MetalForceHudEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "useFastBlinkAnimation"
+            "MetalForceHudEnabled"
         ),
         "iMessageDiagnosticsEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "DADiagnosticsEnabled"
+            "iMessageDiagnosticsEnabled"
         ),
         "IDSDiagnosticsEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "ESDiagnosticsEnabled"
+            "IDSDiagnosticsEnabled"
         ),
         "VCDiagnosticsEnabled": BasicPlistTweak(
             FileLocation.globalPreferences,
-            "AdditionalDiagnosticsEnabled"
+            "VCDiagnosticsEnabled"
         ),
         "AppStoreDebug": BasicPlistTweak(
             FileLocation.appStore,
@@ -291,6 +299,10 @@ def load_internal():
         "AnnounceAllPastes": BasicPlistTweak(
             FileLocation.pasteboard,
             "AnnounceAllPastes"
+        ),
+        "SBShowAuthenticationEngineeringUI": BasicPlistTweak(
+            FileLocation.springboard,
+            "SBShowAuthenticationEngineeringUI"
         )
     }
     tweaks.update(additional_tweaks)

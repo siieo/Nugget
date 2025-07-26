@@ -12,6 +12,7 @@ class InternalPage(Page):
     def load_page(self):
         self.ui.buildVersionChk.toggled.connect(self.on_buildVersionChk_clicked)
         self.ui.RTLChk.toggled.connect(self.on_RTLChk_clicked)
+        self.ui.sbIconVisibilityChk.toggled.connect(self.on_sbIconVisibilityChk_clicked)
         self.ui.metalHUDChk.toggled.connect(self.on_metalHUDChk_clicked)
         self.ui.iMessageChk.toggled.connect(self.on_iMessageChk_clicked)
         self.ui.IDSChk.toggled.connect(self.on_IDSChk_clicked)
@@ -23,6 +24,7 @@ class InternalPage(Page):
         self.ui.enableWakeVibrateChk.toggled.connect(self.on_enableWakeVibrateChk_clicked)
         self.ui.pasteSoundChk.toggled.connect(self.on_pasteSoundChk_clicked)
         self.ui.notifyPastesChk.toggled.connect(self.on_notifyPastesChk_clicked)
+        self.ui.authEngUICheck.toggled.connect(self.on_authEngUICheck_clicked)
 
         load_internal()
 
@@ -31,6 +33,8 @@ class InternalPage(Page):
         tweaks["SBBuildNumber"].set_enabled(checked)
     def on_RTLChk_clicked(self, checked: bool):
         tweaks["RTL"].set_enabled(checked)
+    def on_sbIconVisibilityChk_clicked(self, checked: bool):
+        tweaks["SBIconVisibility"].set_enabled(checked)
     def on_metalHUDChk_clicked(self, checked: bool):
         tweaks["MetalForceHudEnabled"].set_enabled(checked)
     def on_iMessageChk_clicked(self, checked: bool):
@@ -55,3 +59,5 @@ class InternalPage(Page):
         tweaks["PlaySoundOnPaste"].set_enabled(checked)
     def on_notifyPastesChk_clicked(self, checked: bool):
         tweaks["AnnounceAllPastes"].set_enabled(checked)
+    def on_authEngUICheck_clicked(self, checked: bool):
+        tweaks["SBShowAuthenticationEngineeringUI"].set_enabled(checked)

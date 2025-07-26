@@ -39,12 +39,6 @@ class Daemon(Enum):
         "com.apple.hangtracerd",
         "com.apple.spindump",
         "com.apple.rtcreportingd",
-        "com.apple.peakpowermanagerd",
-        "com.apple.proximitycontrold",
-        "com.apple.NetworkLinkConditioner",
-        "com.apple.nanotimekitcompaniond",
-        "com.apple.jetsamproperties.D94",
-        "com.apple.jetsamproperties",
         "com.apple.syslogd"
     ]
     ATWAKEUP = ["com.apple.atc.atwakeup"]
@@ -60,15 +54,10 @@ class Daemon(Enum):
     iCloud = ["com.apple.itunescloudd"]
     InternetTethering = ["com.apple.MobileInternetSharing"]
     PassBook = ["com.apple.passd"]
-    Spotlight = [
-        "com.apple.searchd",
-        "com.apple.corespotlightservice",
-        "com.apple.spotlightknowledged",
-        "com.apple.spotlightknowledged.updater",
-        "com.apple.spotlight.IndexAgent"
-    ]
+    Spotlight = ["com.apple.searchd"]
     VoiceControl = [
         "com.apple.assistant_service",
         "com.apple.assistantd",
         "com.apple.voiced"
     ]
+    NanoTimeKit = ["com.apple.nanotimekitcompaniond"]
