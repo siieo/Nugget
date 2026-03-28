@@ -60,16 +60,13 @@ jobs:
   build-macos-arm:
     if: ${{ github.event.inputs.build_for_macos_arm == 'true' }}
     runs-on: macos-15
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # 👈 Force Node 24 for all steps in this job
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-
-      - name: Install OpenSSL
-        run: |
-          brew update
-          brew install openssl@3 pkg-config
 
       - name: Create venv and install requirements
         run: |
